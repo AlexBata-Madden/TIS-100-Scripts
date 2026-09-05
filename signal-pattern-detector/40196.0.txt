@@ -1,0 +1,45 @@
+@0
+
+
+@1
+START: MOV UP, ACC
+JEZ DECR
+MOV 0, ACC
+SAV
+ZERO: MOV 0, DOWN
+JMP START
+DECR:
+SWP
+SAV
+ADD 1
+JLZ ONE
+SUB 2
+SAV
+JMP ZERO
+ONE: MOV 1, DOWN
+
+@2
+
+
+@3
+
+
+@4
+MOV UP, RIGHT
+
+@5
+MOV LEFT, DOWN
+
+@6
+
+
+@7
+
+
+@8
+
+
+@9
+MOV UP, DOWN
+
+@10
